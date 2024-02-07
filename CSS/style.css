@@ -177,6 +177,7 @@ img {
   cursor: pointer;
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
+  transition: 0.5s;
 }
 .contain .btn:hover {
   background-color: white;
@@ -185,6 +186,8 @@ img {
 * {
   box-sizing: border-box;
 }
+
+/* Contact Box */
 .contact{
   margin: 10vw;
   background-color: #caa298;
@@ -206,9 +209,8 @@ img {
   line-height:10vw;
   font-size: 3.2vw;
 }
-
+/* Contact Box */
 /* Name Form */
-
 .name{
   position: relative;
   padding-top: 1vw;
@@ -261,10 +263,8 @@ img {
   font-size: 1vw;
   color: black;
 }
-
 /* End Name Form */
 /* Email Form */
-
 .email{
   position: relative;
   padding-top: 1vw;
@@ -319,10 +319,8 @@ img {
   color: rgb(0, 0, 0);
   border-color: rgb(0, 0, 0, 0.3);
 }
-
 /* End Email Form */
 /* Message Form */
-
 .message{
   position: relative;
   padding-top: 1vw;
@@ -348,9 +346,7 @@ img {
   border-image: linear-gradient(to right, rgb(0, 0, 0, 0.6), rgb(158, 81, 70, 1));
   border-image-slice: 0.5;
 } 
-
 /* End Message Form */
-
 .send{
   margin-top: 3vw;
   display: flex;
@@ -366,10 +362,4 @@ img {
   color: rgb(0, 0, 0, 0.6);
   border-style: solid;
   border-color: rgb(0, 0, 0, 0.4);
-}
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
 }
