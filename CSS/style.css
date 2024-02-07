@@ -173,27 +173,48 @@ img {
 .contain .btn:hover {
   background-color: white;
 }
-.ref {
-  background-color: #c6ac8f;
-  float: center;
-  text-align: center;
-  padding: 25px 25px;
-  font-size: 20px;
-  font-family: Garamond;
-  margin: auto;
+
+* {
+  box-sizing: border-box;
 }
-.refright {
-  float: right;
-  text-decoration: none;
-  padding-left: 160px;
-  padding-right: 160px;
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
-.refleft {
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 30px;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.containerf {
+  border-radius: 5px;
+  background-color: #D7D6D2;
+  padding: 10px;
+}
+.columnf {
   float: left;
-  text-decoration: none;
-  padding-left: 160px;
-  padding-right: 160px;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
 }
-a {
-  color: black;
+.rowf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
