@@ -6,6 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <script type="text/javascript" src="JS/style.js"> </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Jost:wght@200;300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">    
 </head>
 <body>
   <div class="navbar">
@@ -169,25 +177,26 @@
     </marquee>
   </section> -->
 
-  <div class="containerf">
-    <div class="rowf">
-      <div class="columnf">
-        <img src="PICS/index/back1.png" style="width:100%">
-      </div>
-      <div class="columnf">
-        <div style="text-align:center; size: 5wv; color: #D7D6D2;">
-          <h2>Contact Us</h2>
+  <section>
+    <div class="contact">
+        <h1>Contact Form</h1>
+        <div class="name">
+            <input type="text" name="name" id="name" class="name-field" placeholder="Enter Name" autocomplete="off">
+            <label for="name" class="name-label">Enter Name</label>
         </div>
-        <form action="/action_page.php"> 
-          <label for="name">Name</label>
-          <input type="text" id="Cname" name="name" placeholder="Your name..">
-          <label for="email">Email</label>
-          <input type="text" id="cemail" name="email" placeholder="Your  email..">
-          </select>
-        </form>
-      </div>
-      <input type="submit" value="Submit" style="float: right;">
+
+        <div class="email">
+            <input type="email" name="name" id="email" class="email-field" placeholder="Enter Email" autocomplete="off">
+            <label for="email" class="email-label">Enter Email</label>
+        </div>
+
+        <div class="message">
+            <textarea class="message-field" id="message" name="message" placeholder="Message" rows="5"></textarea>
+        </div>
+        <div class="send">
+            <button>Submit</button>
+        </div>
     </div>
-  </div>
+  </section>
 </body>
 </html>

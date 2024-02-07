@@ -263,7 +263,7 @@ body{
 }
 
 .message textarea{
-    padding: 1vw;
+    padding: 2vw 1vw;
     font-family: 'Gowun Dodum', sans-serif;
     background-color: transparent;
     width: 48vw;

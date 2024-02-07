@@ -1,7 +1,5 @@
 html, body {
   margin: 0;
-  height: 100%;
-  width: 100%;
 }
 body {
   background-color: #D7D6D2;
@@ -19,6 +17,7 @@ img {
   z-index: 1;
 }
 .navbar a {
+  font-family: 'Poppins', sans-serif;
   float: left;
   font-size: 16px;
   font-weight: bold;
@@ -39,7 +38,7 @@ img {
   color: #333;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -53,6 +52,7 @@ img {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .dropdown-content a {
+  font-family: 'Poppins', sans-serif;
   float: none;
   color: #333;
   padding: 12px 16px;
@@ -80,6 +80,7 @@ img {
   filter: blur(5px);
 }
 .title {
+  font-family: 'Jost', sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -93,9 +94,9 @@ img {
 .bannerMain {
   background-color: black;
   text-align: center;
-  font-family: "Times New Roman";
 }
 .banner {
+  font-family: 'Poppins', sans-serif;
   font-size: 70%;
   font-weight: bold;
   color: white;
@@ -117,6 +118,12 @@ img {
 * {
   box-sizing: border-box;
 }
+
+.container1 h2{
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+}
+
 .column {
   float: left;
   width: 33.33%;
@@ -169,6 +176,7 @@ img {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
 }
 .contain .btn:hover {
   background-color: white;
@@ -177,39 +185,187 @@ img {
 * {
   box-sizing: border-box;
 }
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+.contact{
+  margin: 10vw;
+  background-color: #caa298;
+  border-radius: 2%;
+  padding-bottom: 4vw;
+  box-shadow: 0 1.5vw 5vw -0.75vw rgba(123, 86, 71, 0.9);
 }
-input[type=submit] {
-  background-color: #D7D6D2;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-  margin-right: 30px;
+
+.contact .message textarea::placeholder {
+  font-size: 1.5vw;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: 'Jost', sans-serif;
 }
-input[type=submit]:hover {
-  background-color: #D7D6D2;
+
+.contact h1{
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  color: rgb(0, 0, 0, 0.7);
+  line-height:10vw;
+  font-size: 3.2vw;
 }
-.containerf {
-  background-color: black;
-  padding: 10px;
+
+/* Name Form */
+
+.name{
+  position: relative;
+  padding-top: 1vw;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
 }
-.columnf {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
+
+.name-field{
+  outline: 0;
+  border: 0;
+  border-bottom: 0.2vw solid rgb(0, 0, 0, 0.3);
+  padding: 0.9vw 0;
+  background: transparent;
+  font-size: 1.5vw;
+  color: rgb(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+  width: 50vw;
 }
-.rowf:after {
-  content: "";
-  display: table;
-  clear: both;
+
+.name-label{
+  display: block;
+  position: absolute;
+  top: 0;
+  color: rgb(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  font-family: 'Jost', sans-serif;
+}
+
+.name-field::placeholder{
+  color: transparent;
+}
+
+.name-field:placeholder-shown ~ .name-label{
+  font-size: 1.5vw;
+  top: 2vw;
+  padding-left: 0.7vw;
+}
+
+.name-field:focus{
+  border-image: linear-gradient(to right, rgb(0, 0, 0, 0.6), rgb(158, 81, 70, 1));
+  border-image-slice: 1;
+} 
+
+.name-field:focus ~ .name-label{
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 1vw;
+  color: black;
+}
+
+/* End Name Form */
+/* Email Form */
+
+.email{
+  position: relative;
+  padding-top: 1vw;
+  width: 50vw;
+  margin-top: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.email-field{
+  outline: 0;
+  border: 0;
+  border-bottom: 0.2vw solid rgb(0, 0, 0, 0.3);
+  padding: 0.9vw 0;
+  background: transparent;
+  font-size: 1.5vw;
+  color: rgb(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+  width: 50vw;
+}
+
+.email-label{
+  display: block;
+  position: absolute;
+  top: 0;
+  color: rgb(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  font-family: 'Jost', sans-serif;
+}
+
+.email-field::placeholder{
+  color: transparent;
+}
+
+.email-field:placeholder-shown ~ .email-label{
+  font-size: 1.5vw;
+  top: 2vw;
+  padding-left: 0.7vw;
+}
+
+.email-field:focus{
+  border-image: linear-gradient(to right, rgb(0, 0, 0, 0.6), rgb(158, 81, 70, 1));
+  border-image-slice: 1;
+} 
+
+.email-field:focus ~ .email-label{
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 1vw;
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0, 0.3);
+}
+
+/* End Email Form */
+/* Message Form */
+
+.message{
+  position: relative;
+  padding-top: 1vw;
+  width: 50vw;
+  margin-top: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.message textarea{
+  padding: 1vw;
+  font-family: 'Gowun Dodum', sans-serif;
+  background-color: transparent;
+  width: 48vw;
+  color: rgb(0, 0, 0, 0.7);
+  border-color: rgb(0, 0, 0, 0.3);
+  border-width: 0.2vw;
+  outline: none !important;
+  font-size: 2vw;
+}
+
+.message-field:focus{
+  border-image: linear-gradient(to right, rgb(0, 0, 0, 0.6), rgb(158, 81, 70, 1));
+  border-image-slice: 0.5;
+} 
+
+/* End Message Form */
+
+.send{
+  margin-top: 3vw;
+  display: flex;
+  justify-content: center;
+}
+
+.send button{
+  font-family: 'Jost', sans-serif;
+  border-radius: 10% / 20%;
+  border-width: 0.1vw;
+  background-color: rgb(124, 88, 72, 0.4);
+  font-size: 1.3vw;
+  color: rgb(0, 0, 0, 0.6);
+  border-style: solid;
+  border-color: rgb(0, 0, 0, 0.4);
 }
 @media screen and (max-width: 600px) {
   .column, input[type=submit] {
