@@ -1,4 +1,3 @@
-<!-- title -->
 .logo {
     padding-left: 30%;
     position: relative;
@@ -25,9 +24,6 @@ img#shrink {
 .main-gallery {
     align-content: flex;
     max-height: 100%;
-}
-
-.gallery-container {
 }
 
 .slides {
@@ -304,7 +300,6 @@ img#shrink {
     border-radius: 20px;
 }
 
-<!-- footer -->
 footer{
   padding: 10vw 10vw;
   background-color: #7c5848;
