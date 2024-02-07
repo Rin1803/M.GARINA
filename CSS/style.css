@@ -109,6 +109,10 @@ img {
 hr { 
   margin-left: 5%;
   margin-right: 5%;
+  height: 2px;
+  border-width: 0;
+  color: black;
+  background-color: black;
 }
 * {
   box-sizing: border-box;
