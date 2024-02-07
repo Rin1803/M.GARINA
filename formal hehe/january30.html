@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+    <link rel="stylesheet" href="jan30.css">
+    <script src="jan30.js"></script> 
+    <link href="">
+
+    
+    <div class="logo">
+        <img src="Logo.jpg" alt="logo" id="shrink">
+    </div>
+    
+</head>
+
+<body>      
+    <!-- IMAGE GALLERY -->
+    <!-- ITEMS -->
+    
+    <div class="main-gallery">
+        <div class="gallery-container" id="gallery">
+            <div class="gallery-item" onclick="openModal(); currentSlide(1)">
+                <div> <img src="FSP5_cropped.jpg" id="clickIMG"> </div>
+            </div>
+            <div>
+                <div class="h1"> 
+                    <h> Fashion Remade. <br> Youthful Beauty. <br> Elegant Designs. <br> M. Garina</h> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDES -->
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img src="FSP1.jpg" style="width: 90%; height: auto;">
+                </div>
+            </div>
+        </div>
+    
+    <!-- FIRST COLLAGE w IMAGE MAP leading to home page -->
+    <div class="headTwo">
+        <h class="h2">  FORMAL WEAR </h>
+    </div>
+
+    <div class="colOne">
+        <div>
+            <div>
+                <div> <img src="FSP4.jpg" id="SECOND"> </div>
+            </div>
+            <div>
+                <div> <img src="FSP3.jpg" id="THIRD"> </div>
+            </div>
+            <div>
+                <div> <img src="FSP2.jpg" id="FOURTH"> </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="headThree">
+        <h class="h3">  MAIDEN IN RED </h>
+    </div>
+    
+    <div class="colTwo">
+        <div>
+            <div>
+                <div> <img src="FSP5.jpg" id="FIFTH"> </div>
+            </div>
+            <div>
+                <div> <img src="FSP8.jpg" id="EIGHT"> </div>
+            </div>
+            <div>
+                <div> <img src="FSP7.jpg" id="SEVENTH"> </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-cont">
+        <div class="head4"> 
+            <h class="h4"> FEATURED </h> 
+            <p id="WHITEDESC" style=""> Featuring a white ankle length dress perfect for brunch dates and summer events. </p>
+            <img src="FSP2_cropped.jpg" id="CROPPEDFEATURE">
+            <img src="FSP4_cropped.jpg" id="WHITEFEATURE">
+        </div>
+    </div>
+    
+    
+</body>
+</html>
