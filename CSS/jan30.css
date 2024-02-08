@@ -204,6 +204,7 @@ img#shrink {
 
 .h2 {
     font-size: 375%;  
+  text-align: center;
 }
 
 .colOne {
@@ -269,6 +270,7 @@ img#shrink {
 
 .h3 {
     font-size: 375%;  
+  text-align: center;
 }
 
 .colTwo {
@@ -338,6 +340,7 @@ img#shrink {
     padding-top: 10%;
     font-size: 150%;
     text-justify: auto;
+  text-align: center;
     float: left;
     width: 50%;
     height: auto;
